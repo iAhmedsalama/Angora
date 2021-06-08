@@ -1,0 +1,501 @@
+/* ------------------------------- General -------------------------------------- */
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.main-color
+{
+    color:#fff;
+}
+
+.main-bg-color
+{
+    background-color: #fff;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a
+{
+text-decoration: none !important;
+transition: color 0.3s;
+}
+
+a:hover
+{
+color: #f25454 !important;
+}
+.subtitle
+{
+    margin-top: 100px;
+    width: 800px;
+    padding: 0px 25px;
+    font-size: 18px;
+    margin-bottom: 70px;
+}
+
+#hr
+{
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.7) ;
+    width: 40px;
+    transition: all 0.3s;
+    border-radius: 4px;
+
+}
+
+.section-title:hover #hr
+{
+    width: 80px;
+}
+
+.section-title p
+{
+    font-size: 18px;
+    color: #999;
+    margin-bottom: 70px;
+}
+
+.icon .icon-basic-laptop:before
+{
+    content:"5";
+}
+
+
+.empty-30
+{
+    clear: both;
+    height: 30px;
+}
+
+
+
+
+/* ------------------------------- Home -------------------------------------- */
+
+/* #home
+{
+    height: 100vh;
+} */
+.carousel-img
+{
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+
+.carousel-caption
+{
+    bottom: 50%; 
+}
+
+
+.navbar
+{
+   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-link .active
+{
+    color: #f25454;
+}
+ul li a
+{
+    color: #fff;
+}
+
+.home-p
+{
+    font-weight: 300;
+    font-size: 80px;
+}
+
+/* sliders */
+.carousel-inner
+{
+    position: relative;
+}
+
+.next ,.prev
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    position: absolute;
+    left: 10px;
+    top:40%;
+
+
+    width: 50px;
+    height: 50px;
+    background-color:#b0b0b0;
+    z-index: 1;
+    border-radius: 4px;
+}
+.next:hover ,.prev:hover
+{
+    background-color:#f25454;
+}
+
+
+
+#home .settings
+{
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    cursor: pointer;
+}
+#home .settings i
+{
+    font-size: 32px;
+}
+
+/* 
+.intro .mouse {
+    position: absolute;
+    width: 26px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 13px;
+    background: transparent;
+    bottom: 30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    transition: all 0.3s;
+}
+
+.intro .mouse a {
+    display: block;
+    width: 26px;
+    height: 40px;
+}
+
+.intro .mouse .wheel {
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 6px;
+    left: 0;
+    right: 0;
+    animation: magic-mouse 1.7s infinite ease;
+} */
+
+/*------------------------ About us ----------------------- */
+
+#about .container
+{
+    padding: 100px 0px;
+}
+
+#about .section-title h2:before {
+    /* border: 3px solid #000; */
+    content: attr(data-bigletter);
+    position: absolute;
+    font-size: 2em;
+    opacity: 0.06;
+    top: -0.17em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+#about .progress-item, .progress-heading
+{
+    margin-bottom: 15px;
+}
+
+#about .progress-bar
+{
+    height: 4px;
+    background-color: #337ab7;
+
+}
+
+#about .progress
+{
+    height: 4px;
+}
+
+#about .progress-title
+{
+    float: left;
+}
+
+#about .progress-value
+{
+    text-align: end;
+}
+
+
+/*------------------------ Our Team ----------------------- */
+
+#team .section-title h2:before {
+    /* border: 3px solid #000; */
+    content: attr(data-bigletter);
+    position: absolute;
+    font-size: 2em;
+    opacity: 0.06;
+    top: -0.17em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+#team .members
+{
+    padding-bottom: 100px;
+}
+
+
+/* team member */
+.team-img
+{
+    position: relative;
+}
+
+.team-social .team-social-inner
+{
+    background-color: #f25454;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    transform: translateY(10px);
+    opacity: 0;
+    overflow: hidden;
+    transition: all 1s;
+
+
+}
+
+.team-member:hover  .team-social .team-social-inner
+{
+    transform: translateY(0px);
+    opacity: 0.5;
+
+}
+.team-social .team-social-inner a i
+{
+    color: #fff;
+    padding: 10px;
+    transform: translateY(10px);
+    transition: all 1s;
+
+}
+
+.team-member:hover  .team-social .team-social-inner a i
+{
+    transform: translateY(0px);
+
+}
+
+.team-img
+{
+    transition: all 1s;
+
+}
+
+.team-member:hover .team-img
+{
+    transform: scale(1.2, 1.2);
+
+}
+
+
+/* titles */
+
+.team-member .team-details {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.team-member .team-details .title .position
+{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+
+/*------------------------ info-box ----------------------- */
+#info-box
+{
+    padding: 100px;
+}
+
+
+#info-box .title
+{
+    line-height: 50px;
+    font-weight: 400;
+    margin: 0px;
+    font-size: 32px;
+}
+
+#info-box .btn
+{
+    background-color: #f25454;
+    padding: 15px 30px;
+}
+
+#info-box .Contact-Us:hover
+{
+color: #fff !important;
+}
+/*------------------------ services ----------------------- */
+
+
+
+.service-text-head .h3, h3 {
+    font-size: 1rem;
+}
+
+.service-text-head .h3, h3:hover
+{
+    color: #f25454;
+    transition: all 0.3s;
+}
+
+.service-item i
+{
+    font-size: 1.5rem;
+    color: #f25454;
+
+}
+
+#services .section-title h2:before {
+    /* border: 3px solid #000; */
+    content: attr(data-bigletter);
+    position: absolute;
+    font-size: 2em;
+    opacity: 0.06;
+    top: -0.17em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+/*------------------------ client reviews ----------------------- */
+
+
+#client-reviews .section-title h2:before {
+    /* border: 3px solid #000; */
+    content: attr(data-bigletter);
+    position: absolute;
+    font-size: 2em;
+    opacity: 0.06;
+    top: -0.17em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+
+/*------------------------ Get in Touch ----------------------- */
+
+#getouch .section-title h2:before {
+    /* border: 3px solid #000; */
+    content: attr(data-bigletter);
+    position: absolute;
+    font-size: 2em;
+    opacity: 0.06;
+    top: -0.17em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+
+/*------------------------ footer ----------------------- */
+
+.to-top
+{
+
+     width: 50px;
+    height: 50px;
+    background-color: #f25454;
+    border-radius: 50%;
+}
+#footer .to-top a
+{
+    color: #fff;
+    transition: color 1s !important;
+
+}
+#footer .to-top:hover a
+{
+    color: #000 !important;
+
+}
+
+#footer .footer-widgets
+{
+    height: 100vh;
+    background-color: #000;
+    background-image: url(../images/dotted-map.png);
+}
+
+#footer .text-widget
+{
+    color: #b0b0b0;
+}
+
+#footer .tag
+{
+    display: block;
+    float: left;
+    margin: 0 8 8 0;
+    padding: 2px 10px;
+    font-size: 13px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+#footer .footer-copyright {
+    position: relative;
+    clear: both;
+    background: #1a1a1a;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#footer .footer-social a, p>a
+{
+    margin: 0 10;
+    color: #fff;
+}
